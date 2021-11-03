@@ -7,11 +7,11 @@ const BASE_URL = "http://localhost/vshoes";
 date_default_timezone_set('America/Mexico_City');
 
     const DB_HOST = "localhost";        
-// id16725746_vshoes
+
     const DB_NAME = "vshoes";
-// id16725746_vshoes_db
+
     const DB_USER = "root";
-    // J4W~DmjAK6W3vN@N
+    
     const DB_PASSWORD = "";
     const DB_CHARSET ="utf8" ;
     
@@ -49,8 +49,8 @@ const PRECIOENVIO = 0;
 
 // constantes para consumo de API de PAYPAL
 
-const IDCLIENTE = "AW4AHR0Xf-ziE0kLQHD52qLPo3o_EzxTsC0_-hNUSt-xbGAcK8IhPwSIL7nRMJ40vqsqFy5wsqaZc8M4";
-const SECRET = "EJT-IXvN3iFIVd8ymAFgMbei07_yhbSNZHQwcTJH0UZ7U1igpskhMcTavDGs1TT78QTN-vVFNTsjWUDV";
+const IDCLIENTE = "";
+const SECRET = "";
 const URLPL = "https://api-m.sandbox.paypal.com";
 
 const ConexionCurlGet ="";
