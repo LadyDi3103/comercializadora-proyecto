@@ -1,0 +1,400 @@
+<!-- Componentes, ver diseño en Figma:
+            Navegacion  
+            Imagen principal de producto
+            Galeria de imagenes
+            Detalle del producto, (Nombre, categoria, precio, cantidad a elegir, boton añadir)
+            boton ver en 3d
+            Footer
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/5e80805285.js"></script>
+
+    <script src="https://use.fontawesome.com/5e80805285.js"></script>
+ <!-- Bootstrap4 files-->
+
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+ <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+    />
+    <link rel="stylesheet" href="vendor/node_modules/animate.css/animate.css" />
+
+    <link rel="stylesheet" href="css/pushbar.css" />
+
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <title>V-Shoes</title>
+  </head>
+<!-- MENU -->
+  <header class="header-menu">
+      <section class="contenedor-menu">
+        <div class="logo">
+          <a href="">V-SHOES</a>
+        </div>
+
+        <button class="menu-boton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+          <svg
+            class="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+            />
+          </svg>
+        </button>
+
+        <nav class="menu-principal">
+          <a href="index.html">Inicio</a>
+
+          <a href="#">Tienda</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="#">Contacto</a>
+          <a href="#">Mi cuenta</a>
+        </nav>
+
+        <div class="iconos">
+          <button><i class="fa fa-search" aria-hidden="true"></i></button>
+
+          <button data-pushbar-target="pushbar-menu" class="btn-cart">
+            <i class="fa fa-shopping-cart"></i>
+          </button>
+          
+        </div>
+      </section>
+    </header>
+<!-- FIN MENU -->
+
+<!-- MENU CARRITO -->
+ <div
+      data-pushbar-id="pushbar-menu"
+      data-pushbar-direction="right"
+      class="pushbar-menu"
+    >
+      <div class="contenedor">
+        <div class="info-menu">
+          <button data-pushbar-close><i class="fa fa-times"></i></button>
+          <h3>Tu Carrito</h3>
+
+          <div class="item">
+            <img src="img/item-cart-02.jpg" alt="" />
+            <div class="detalle-producto">
+              <p class="nombre-producto">Poducto 1</p>
+              <p class="precio-producto">1 x $1,300.00 MXN</p>
+            </div>
+          </div>
+
+          <div class="total">
+            <p class="precio-total">Total: <span> $1,300.00 MXN</span></p>
+            <button class="btn-bg">Ver Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- MENU CARRITO -->
+     
+
+
+
+
+     <!-- PRODUCTOS NUEVOS -->
+
+    <div class="contenedor">
+      <h2 class="categorias_titulo animate__animated animate__rotateInDownLeft">
+        Productos nuevos
+      </h2>
+      
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="menu_breadcrumb breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tienda</li>
+        </ol>
+      </nav>
+    
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <figure class="card card-product-grid">
+            <div class="img-wrap">
+              <img src="img/product-17.jpg" />
+              <button
+                class="btn-overlay btn-bg"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+              >
+                Ver Producto
+              </button>
+            </div>
+            <figcaption class="info-wrap border-top">
+              <p class="title">Mocasines Negros</p>
+              <div class="price mt-2">$1,300.00 MXN</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- MODAL PRODUCTO -->
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title modal_titulo" id="exampleModalLabel">
+                Producto
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="row no-gutters">
+                  <aside class="col-sm-6 border-right">
+                    <article class="gallery-wrap">
+                      <div class="img-big-wrap">
+                        <a
+                          href="img/product-17.jpg"
+                          class="item-thumb fancybox"
+                          data-fancybox="galeria"
+                          ><img id="imagenBox" src="img/product-17.jpg"
+                        /></a>
+                      </div>
+                      <!-- img-big-wrap.// -->
+                      <div class="thumbs-wrap">
+                        <a
+                          href="img/product-15.jpg"
+                          class="item-thumb fancybox"
+                          data-fancybox="galeria"
+                        >
+                          <img class="item-sm" src="img/product-15.jpg"
+                        /></a>
+                        <a
+                          href="img/product-16.jpg"
+                          class="item-thumb fancybox"
+                          data-fancybox="galeria"
+                        >
+                          <img class="item-sm" src="img/product-16.jpg"
+                        /></a>
+                        <a
+                          href="img/product-14.jpg"
+                          class="item-thumb fancybox"
+                          data-fancybox="galeria"
+                        >
+                          <img class="item-sm" src="img/product-14.jpg"
+                        /></a>
+                      </div>
+                      <!-- thumbs-wrap.// -->
+                    </article>
+                    <!-- gallery-wrap .end// -->
+                  </aside>
+                  <main class="col-sm-6">
+                    <article class="content-body">
+                      <h2 class="title">Mocasines</h2>
+
+                      <p class="descripcion_producto">
+                        Descripción del producto
+                      </p>
+
+                      <div class="h3 mb-4">
+                        <var class="price h4">$815.00 MXN</var>
+                      </div>
+                      <!-- price-wrap.// -->
+
+                      <div class="form-row">
+                        <div class="form-group">
+                          <select class="custom-select form-control">
+                            <option disabled selected>
+                              Selecciona la talla
+                            </option>
+                            <option>24</option>
+                            <option>26</option>
+                            <option>28</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="col">
+                            <select class="custom-select form-control">
+                              <option disabled selected>Cantidad</option>
+                              <option>24</option>
+                              <option>26</option>
+                              <option>28</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col">
+                            <select class="custom-select form-control">
+                              <option disabled selected>Color</option>
+                              <option>24</option>
+                              <option>26</option>
+                              <option>28</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- col.// -->
+                      </div>
+                      <div class="form-row">
+                        <div class="col">
+                          <button
+                            class="btn-overlay btn-bg"
+                            type="button"
+                            
+                          >
+                            Agregar al carrito
+                            
+                          </button>
+                        </div>
+
+                        <!-- col.// -->
+                      </div>
+                      <!-- row.// -->
+                    </article>
+                    <!-- product-info-aside .// -->
+                  </main>
+                  <!-- col.// -->
+                </div>
+                <!-- row.// -->
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIM MODAL PRODUCTO -->
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    <!-- FIN PRODUCTOS NUEVOS -->
+    <!-- FIN PRODUCTOS NUEVOS -->
+
+    
+<!-- FOOTER -->
+      <footer class="section-footer border-top">
+	<div class="container">
+		<section class="footer-top padding-y">
+			<div class="row">
+				<aside class="col-md">
+					<h6 class="title">Empresa</h6>
+					<ul class="list-unstyled">
+						<li> <a href="nosotros.html">Quiénes somos</a></li>
+						
+					</ul>
+				</aside>
+				<aside class="col-md">
+					<h6 class="title">Políticas</h6>
+					<ul class="list-unstyled">
+						<li> <a href="cambios_garantias.html">Cambios y garantías</a></li>
+						<li> <a href="privacidad.html">Privacidad</a></li>
+						<li> <a href="terminos_condiciones.html">Términos y condiciones</a></li>
+						
+					</ul>
+				</aside>
+				<aside class="col-md">
+					<h6 class="title">Contáctanos</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"> <i class="fa fa-map-marker"></i> Av. Instituto Tecnológico S/N Colonia. La comunidad C.P 54070, Tlalnepantla de Baz, México </a></li>
+						<li><a href="#"> <i class="fa fa-phone"></i> 55-6577-1520 </a></li>
+						<li><a href="#"> <i class="fa fa-envelope"></i> vhoes053@gmail.com </a></li>
+						
+					</ul>
+				</aside>
+
+				<aside class="col-md">
+					<h6 class="title">Redes Sociales</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"> <i class="fa fa-facebook"></i> Facebook </a></li>
+						<li><a href="#"> <i class="fa fa-twitter"></i> Twitter </a></li>
+						<li><a href="#"> <i class="fa fa-instagram"></i> Instagram </a></li>
+						
+					</ul>
+				</aside>
+			</div> <!-- row.// -->
+		</section>	<!-- footer-top.// -->
+
+		<section class="footer-bottom border-top row">
+			<div class="col-md-2">
+				<p class="text-muted"> &copy 2021 </p>
+			</div>
+			
+			<div class="col-md-2 text-muted">
+				<i class="fa fa-cc-visa"></i>
+				<i class="fa fa-cc-paypal"></i>
+				<i class="fa fa-cc-mastercard"></i>
+			</div>
+		</section>
+    
+  
+    
+	</div><!-- //container -->
+</footer>
+<!-- FIN FOOTER -->
+
+ <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/pushbar.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/script.js"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+  </body>
+</html>

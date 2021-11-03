@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+:root {
+  --main-font: "Raleway";
+  --font-size: 1.6rem;
+  --main-color: #4f0000;
+  --link-color: #710117;
+  --title-color: #710117;
+  --menu-mobile-backgroundcolor: #e2dae0;
+  --background-second-color: #f2f2f2;
+  --text-color: #ae8b70;
+  --text-second-color: #303437;
+  --card-hover-color: rgba(79, 0, 0, 0.5);
+  --main-modal-color: rgba(79, 0, 0, 0.5);
+  --second-modal-color: rgba(34, 34, 34, 0.85);
+  --table-header-color: rgba(217, 206, 214, 0.5);
+  --container-width: 120rem;
+  --header-height: 6.4rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--main-font);
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+p {
+
+  letter-spacing: 1px;
+  color: #7f7f7f;
+  font-size: 12px;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+h4, small {
+  color: var(--link-color);
+  margin: 0;
+}
+ small {
+  color: var(--link-color);
+  margin: 0;
+  font-weight: lighter;
+}
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  border: 1px solid var(--main-color);
+  border-spacing: 0;
+}
+table tr td,
+table tr th {
+  padding: 5px 10px;
+
+  font-size: 12px;
+}
+#detalleOrden tr td {
+  border: 1px solid #ccc;
+}
+.table-active {
+  background-color: var(--main-color);
+  color: white;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 470px) {
+  .logo {
+    width: 90px;
+  }
+  p,
+  table tr td,
+  table tr th {
+    font-size: 9px;
+  }
+}

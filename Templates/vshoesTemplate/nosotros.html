@@ -1,0 +1,220 @@
+<!-- Componentes, ver diseño en Figma:
+            Navegacion  
+            Header con titulo e imagen
+            Titulo
+            Parrafo
+            Imagen ilustrativa
+            Footer
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://use.fontawesome.com/5e80805285.js"></script>
+
+    <!-- CSS only -->
+    
+
+    <!-- Bootstrap4 files-->
+    <script src="../js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+    <!-- custom style -->
+    <link href="../css/ui.css" rel="stylesheet" type="text/css" />
+    <link href="../css/responsive.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css"
+    />
+    <link rel="stylesheet" href="vendor/node_modules/animate.css/animate.css" />
+
+    <link rel="stylesheet" href="css/pushbar.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    
+    <title>V-Shoes</title>
+  </head>
+<!-- MENU -->
+  <header class="header-menu">
+      <section class="contenedor-menu">
+        <div class="logo">
+          <a href="">V-SHOES</a>
+        </div>
+
+        <button class="menu-boton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+          </svg>
+          <svg
+            class="none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+            />
+          </svg>
+        </button>
+
+        <nav class="menu-principal">
+          <a href="index.html">Inicio</a>
+
+          <a href="tienda.html">Tienda</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Contacto</a>
+          <a href="#">Mi cuenta</a>
+        </nav>
+
+        <div class="iconos">
+          <button><i class="fa fa-search" aria-hidden="true"></i></button>
+
+          <button data-pushbar-target="pushbar-menu" class="btn-cart">
+            <i class="fa fa-shopping-cart"></i>
+          </button>
+          
+        </div>
+      </section>
+    </header>
+<!-- FIN MENU -->
+
+<!-- MENU CARRITO -->
+ <div
+      data-pushbar-id="pushbar-menu"
+      data-pushbar-direction="right"
+      class="pushbar-menu"
+    >
+      <div class="contenedor">
+        <div class="info-menu">
+          <button data-pushbar-close><i class="fa fa-times"></i></button>
+          <h3>Tu Carrito</h3>
+
+          <div class="item">
+            <img src="img/item-cart-02.jpg" alt="" />
+            <div class="detalle-producto">
+              <p class="nombre-producto">Poducto 1</p>
+              <p class="precio-producto">1 x $1,300.00 MXN</p>
+            </div>
+          </div>
+
+          <div class="total">
+            <p class="precio-total">Total: <span> $1,300.00 MXN</span></p>
+            <button class="btn-bg">Ver Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- MENU CARRITO -->
+
+<!-- INFO NOSOTROS -->
+
+ <main class="contenedor">
+   <div class="contenedor__texto">
+     <h1 class="animate__animated animate__fadeInDown">Nosotros</h1>
+   </div>
+      
+      <div class="nosotros">
+        <div class="nosotros__contenido">
+          <h2 class="animate__animated animate__fadeInDown">Nuestra historia</h2>
+          <p class="animate__animated animate__zoomIn">
+            V SHOES es una empresa creada el 19 de marzo de 2021, todo comenzó como
+            un proyecto escolar, el propósito de la empresa es brindar productos de 
+            calidad y máximo confort en calzado para toda la familia, así como también
+            ofrecer a los empleados crecimiento laboral y personal, apoyándolos con
+            capacitación frecuentemente para un mejor desempeño en su lugar de trabajo,
+            somos socialmente responsables con el medio ambiente, ya que contamos con 
+            una línea de calzado ecológico y campañas de reforestación.
+          </p>
+          
+        </div>
+        <img src="img/undraw_Team_page_re_cffb.svg" alt="nosotros" class="nosotros__imagen" />
+      </div>
+    </main>
+
+
+
+<!-- FIN INFO NOSOTROS -->
+    
+<!-- FOOTER -->
+      <footer class="section-footer border-top">
+	<div class="container">
+		<section class="footer-top padding-y">
+			<div class="row">
+				<aside class="col-md">
+					<h6 class="title">Empresa</h6>
+					<ul class="list-unstyled">
+									<li> <a href="nosotros.html">Quiénes somos</a></li>
+
+						
+					</ul>
+				</aside>
+				<aside class="col-md">
+					<h6 class="title">Políticas</h6>
+					<ul class="list-unstyled">
+					<li> <a href="cambios_garantias.html">Cambios y garantías</a></li>
+						<li> <a href="privacidad.html">Privacidad</a></li>
+						<li> <a href="terminos_condiciones.html">Términos y condiciones</a></li>
+						
+					</ul>
+				</aside>
+				<aside class="col-md">
+					<h6 class="title">Contáctanos</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"> <i class="fa fa-map-marker"></i> Av. Instituto Tecnológico S/N Colonia. La comunidad C.P 54070, Tlalnepantla de Baz, México </a></li>
+						<li><a href="#"> <i class="fa fa-phone"></i> 55-6577-1520 </a></li>
+						<li><a href="#"> <i class="fa fa-envelope"></i> vhoes053@gmail.com </a></li>
+						
+					</ul>
+				</aside>
+
+				<aside class="col-md">
+					<h6 class="title">Redes Sociales</h6>
+					<ul class="list-unstyled">
+						<li><a href="#"> <i class="fa fa-facebook"></i> Facebook </a></li>
+						<li><a href="#"> <i class="fa fa-twitter"></i> Twitter </a></li>
+						<li><a href="#"> <i class="fa fa-instagram"></i> Instagram </a></li>
+						
+					</ul>
+				</aside>
+			</div> <!-- row.// -->
+		</section>	<!-- footer-top.// -->
+
+		<section class="footer-bottom border-top row">
+			<div class="col-md-2">
+				<p class="text-muted"> &copy 2021 </p>
+			</div>
+			
+			<div class="col-md-2 text-muted">
+				<i class="fa fa-cc-visa"></i>
+				<i class="fa fa-cc-paypal"></i>
+				<i class="fa fa-cc-mastercard"></i>
+			</div>
+		</section>
+    
+  
+    
+	</div><!-- //container -->
+</footer>
+<!-- FIN FOOTER -->
+
+
+
+
+
+    <script src="js/pushbar.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+   
+    <script src="js/script.js" type="module"></script>
+  </body>
+</html>

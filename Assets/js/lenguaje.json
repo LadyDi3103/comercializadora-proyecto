@@ -1,0 +1,14 @@
+{    
+    "lengthMenu": "Mostrar MENU filas por página",
+    "zeroRecords": "No se encontraron registros",
+    "info": "Mostrando página PAGE de _PAGES_",
+    "infoEmpty": "No hay registros dispobles",
+    "infoFiltered": "(Filtrado de MAX filas en total)",
+    "search":       	"Buscar",
+    "paginate": {
+        "sFirst":    	"Primero",
+        "sPrevious": 	"Anterior",
+        "sNext":     	"Siguiente",
+        "sLast":     	"Último"
+    }                  
+}
